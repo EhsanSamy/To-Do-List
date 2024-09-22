@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To Do</title>
+    <link rel="stylesheet" href="./CSS/to-do-list.css">
+    <link rel="icon" href="./images/timeline.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <main>
+
+        <section class="one">
+
+            <div class="to-do">
+                <span>To Do List</span>
+            </div>
+
+            <div class="score">
+                <span id="done">0</span>
+                <span>/</span>
+                <span id="all">0</span>
+            </div>
+
+        </section>
+
+        <section class="two">
+
+            <div class="form">
+                <input type="text" name="task" id="task" placeholder="Enter New Task" required>
+
+                <button id="add"><span><i class="fas fa-plus"></i></span></button>
+            </div>
+
+            <div class="filter">
+                <button class="filter-btn active" data-filter="all"><span> All <i class="fas fa-tasks"></i> </span></button>
+                <button class="filter-btn" data-filter="pending"> <span>Pending <i class="fas fa-clock"></i> </span> </button>
+                <button class="filter-btn" data-filter="completed"><span> Completed <i class="fas fa-check"></i></span></button>
+            </div>
+
+            <div class="tasks">
+                <ul id="list-container">
+                    <!-- <li class="task"> <i class="fas fa-check"></i> <span>Make Your To Do List</span> <i class="fas fa-times delete"></i></li>-->
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="./JS/to-do-list.js"></script>
+    
+</body>
+
+</html>
